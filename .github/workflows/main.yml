@@ -23,12 +23,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Log the prebuild disk space
-      #- name: Step 1 - Log the prebuild disk space
-      #  run: df
+      - name: Step 1 - Log the prebuild disk space
+        run: df
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      #- name: Step 2 - Checkout master branch
-      #- uses: actions/checkout@v4
+      - name: Step 2 - Checkout master branch
+      - uses: actions/checkout@v4
 
       # Setup Java in the worksapce
       #- name: Step 3 - Setup Java  JDK 17
