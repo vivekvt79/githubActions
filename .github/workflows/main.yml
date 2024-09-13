@@ -27,17 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: sh ./cmdCommandsCheck.sh
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo What is in this directory
           ls -a
-          echo
-          echo Is Java installed?
-          java -version
-          echo Where is Selenium Jars?
-          echo $SELENIUM_JAR_PATH
-          echo What env variables are available?
-          env
