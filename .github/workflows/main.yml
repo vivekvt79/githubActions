@@ -49,3 +49,6 @@ jobs:
       # Log the postbuild disk space
       - name: Step 6 - Log the postbuild disk space
         run: df
+
+
+        
